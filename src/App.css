@@ -29,16 +29,17 @@
 .btn-home{
     font-size: 18px;
     border-radius: 3px;
+    background-color: violet;
 }
 .btn-home:hover{
     font-size: 18px;
     border-radius: 3px;
-    color: rgb(176, 22, 223);
+    background-color: rgb(200, 79, 236);
 }
 .product-details{
     color: rgb(15, 14, 14);
     font-size: 18px;
-    background-color: rgba(241, 98, 241, 0.637);
+    background-color: rgba(192, 78, 192, 0.637);
     border-radius: 10px;
     height: 440px;
     width: 450px;
@@ -57,7 +58,7 @@
     width: 120px;
     font-size: 16px;
     background-color: violet;
-    color: rgb(9, 9, 160);
+    color: rgb(242, 242, 243);
     background-color: rgb(204, 153, 252);
 } 
 .prod-delete,.prod-edit{
@@ -74,11 +75,11 @@
     height: 30px;
     width: 70px;
     font-size: 15px;
-    color: rgb(9, 9, 160);
+    color: rgb(239, 239, 245);
     background-color: rgb(204, 153, 252);
  }
  .form-details{
-    background-color:rgb(238, 75, 238);
+    background-color:  rgba(192, 78, 192, 0.637);
     height: 550px;
     display: flex;
     flex-direction: column;
@@ -90,6 +91,7 @@
     width: 100px;
      margin-left:17vh; 
     padding: 4px;
+    background-color: violet;
  }
  .form-group {
     display: flex;
@@ -110,12 +112,12 @@
    .submit{
     width: 100px;
     position: absolute;
-    right: 240px;
+    right: 270px;
     top: 79vh;
     padding: 4px;
  }
  .form-details{
-    background-color:rgb(241, 74, 241);
+    background-color: rgba(192, 78, 192, 0.637);
     height: 510px;
     display: flex;
     flex-direction: column; 
