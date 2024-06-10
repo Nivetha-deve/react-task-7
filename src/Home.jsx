@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 
  const Home = () => {
     return(
-        <>
-        <h1>Home page</h1>
-        <Link to="/Users">users</Link>
-        </>
+        <div className="homepage">
+        <h1 className="home-head">Welcome to Users Home Page</h1>
+        <Link className="home-link" to="/Users">Users</Link>
+        </div>
     )
  }
  export default Home;

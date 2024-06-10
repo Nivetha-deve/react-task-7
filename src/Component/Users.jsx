@@ -1,43 +1,34 @@
-import { useEffect, useState } from "react";
+/* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
 import User from "./User";
-import { deleteUser,readAllData } from "../apis/curd-ops-axios";
+import { deleteUser } from "../apis/curd-ops-axios";
 
-const Users = () => {
+const Users = ({setUser,user}) => {
     const navigate = useNavigate();
-    const [user,setUser] = useState([]);
-    
-const loadUser = async () => {
-    const data = await readAllData();
-    setUser(data);
-};
-
-const reloadUsers = async () => {
-    await loadUser();
-  };
 
 const removeUser = async (userId) => {
     await deleteUser(userId);
     setUser(user.filter((user) => user.id!==userId));
 };
 
-const navigateToAdd = () => {
-    navigate("/add-users",{state: {reloadUsers}});
-}
+ const navigateToAdd = () => {
+     navigate("/add-users")
+ };
 
-useEffect(() => {
-loadUser();
-},[]);
-
-return(
+return (
+        
     <>
     <h1>List of Users</h1>
-    {console.log("added")}
-    <button onClick={navigateToAdd}>Add Users</button>
+    <button className="add-user" onClick={navigateToAdd}>Add User</button>
+    <div>
     {user.map((user) => (
-        <User {...user} key={user.id} removeUser ={removeUser} />
+      <User {...user} key={user.id} removeUser={removeUser} />
     ))}
-    </>
-)
+    </div>
+  </>
+);
 };
 export default Users;
+
+
+

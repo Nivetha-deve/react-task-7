@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const User= ({id,username,email,city,address,zipcode,phone,website,company,removeUser}) => {
 
-   const navigate = useNavigate(); 
+   const navigate = useNavigate();
 
      return(
       <div className="product-details">
@@ -20,12 +20,14 @@ const User= ({id,username,email,city,address,zipcode,phone,website,company,remov
          <p>BS: {company.bs}</p>
          </div>
        )}
+       <div className="prod-btn">
        <button className="prod-delete" onClick={()=>removeUser(id)}>Delete</button>
        <button className="prod-edit" onClick={() => {
-         navigate(`/add-users?edit=true&userId=${id}`,{
-            state:{id,username,email,city,zipcode,phone,website,company}
-         });
+          navigate(`/add-users?edit=true&userId=${id}`,{
+              state:{id,username,email,city,zipcode,phone,website,company}
+            });
        }}>Edit</button>
+       </div>
       </div>
      );
     };

@@ -1,6 +1,124 @@
-body{
-    margin: 0px;;
+
+.homepage{
+    background-color: hsla(300, 68%, 56%, 0.404);
+    height: 500px;
+    color: rgb(12, 19, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
 }
-.main{
-    background-color: blue;
+.home-link {
+     position: relative;
+    bottom: 230px;
+    font-size: 20px;
+    left:250px;
+} 
+.layout{
+    background-color: hsla(300, 37%, 53%, 0.404); 
+    text-align: center;
+    border: 3px solid violet;
 }
+
+.footer{
+    height: 110px;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid violet;
+}
+.btn-home{
+    font-size: 18px;
+    border-radius: 3px;
+}
+.btn-home:hover{
+    font-size: 18px;
+    border-radius: 3px;
+    color: rgb(176, 22, 223);
+}
+.product-details{
+    color: rgb(15, 14, 14);
+    font-size: 18px;
+    background-color: rgba(241, 98, 241, 0.637);
+    border-radius: 10px;
+    height: 440px;
+    width: 450px;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+}   
+ .add-user{
+    padding: 4px;
+    width: 120px;
+    font-size: 15px;
+    background-color: violet;
+} 
+.add-user:hover{
+    padding: 4px;
+    width: 120px;
+    font-size: 16px;
+    background-color: violet;
+    color: rgb(9, 9, 160);
+    background-color: rgb(204, 153, 252);
+} 
+.prod-delete,.prod-edit{
+   padding: 3px;
+   margin: 5px;
+   height: 30px;
+   width: 70px;
+   font-size: 14px;
+   background-color:violet;
+}
+.prod-delete:hover,.prod-edit:hover{
+    padding: 3px;
+    margin: 5px;
+    height: 30px;
+    width: 70px;
+    font-size: 15px;
+    color: rgb(9, 9, 160);
+    background-color: rgb(204, 153, 252);
+ }
+ .form-details{
+    background-color:rgb(238, 75, 238);
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px; 
+    margin: 0 auto;
+ }
+ .submit{
+    width: 100px;
+     margin-left:17vh; 
+    padding: 4px;
+ }
+ .form-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 10px; 
+  }
+  .form-group label {
+    margin-bottom: 2px;
+  }
+
+ @media (width <800px) {
+    .home-link {
+       position: absolute;
+       bottom: 550px;
+       font-size: 20px;
+       right:250px;
+   } 
+   .submit{
+    width: 100px;
+    position: absolute;
+    right: 240px;
+    top: 79vh;
+    padding: 4px;
+ }
+ .form-details{
+    background-color:rgb(241, 74, 241);
+    height: 510px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+ }
+ }
